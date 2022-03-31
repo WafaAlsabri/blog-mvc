@@ -7,6 +7,7 @@
         public $con;
         public $result;
         public $row;
+        
         public function __construct(){
       
             $dns = "mysql:host=".$this->host.";dbname=".$this->database;

@@ -1,6 +1,5 @@
 <?php
-    component('header');
-    component('admin_navbar');
+   
 ?>
 
     <div class="container ">
@@ -15,16 +14,11 @@
                 endif;
             ?>    
             <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title" value="<?php echo $data->title;?>" required>
-                    <input type="hidden" value="<?php echo $data->blog_id;?>" name="blog_id">
+                    <label for="title">Name</label>
+                    <input type="text" class="form-control" id="title" name="name" placeholder="Enter name" value="<?php echo $data->name;?>" required>
+                    <input type="hidden" value="<?php echo $data->id;?>" name="id">
                 </div>
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <textarea type="password" name="description" class="form-control" id="description" placeholder="Description" required style="height:200px;">
-                    <?php echo $data->description; ?>
-                    </textarea>
-                </div>
+   
                 <div class="form-group">
                     <label for="image">Image</label>
                     <input type="file" class="form-control-file" name="image" id="image" >

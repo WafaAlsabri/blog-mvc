@@ -1,7 +1,7 @@
 <?php
     class welcome extends framework{
         public function index(){
-            $this->view('blog');
+            $this->view('library');
         }
     }
 ?>

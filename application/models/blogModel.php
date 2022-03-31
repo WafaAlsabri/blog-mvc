@@ -1,7 +1,7 @@
 <?php
     class blogModel extends database{
         public function fetchBlog(){
-            $qry = "select * from `blog` order by `dttm` desc";
+            $qry = "select * from `blog` order by `created_at` desc";
             $params = [];
             $result = $this->Query($qry,$params);
             $row = $this->fetchData($result);
@@ -17,7 +17,7 @@
 
         public function fetchPost($id){
             $data = [$id[2]];
-            $qry = "SELECT * FROM blog WHERE blog_id=?";  
+            $qry = "SELECT * FROM blog WHERE id=?";  
             $result = $this->Query($qry,$data);
             $row = $this->fetchRecord($result);   
             if($row){
@@ -30,7 +30,7 @@
             
         }
 
-        public function searchPost($data){
+        /*public function searchPost($data){
             
             $qry = "SELECT * FROM blog WHERE `title` like ? or `description` like ?";  
             $result = $this->Query($qry,$data);
@@ -41,6 +41,6 @@
             else{
                 return false;
             }
-        }
+        }*/
     }
 ?>

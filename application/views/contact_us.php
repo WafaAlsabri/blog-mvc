@@ -1,6 +1,6 @@
 <?php
     component('header');
-    component('navbar');
+   
 ?>
 <div class="container ">
     <div class="row add_post">

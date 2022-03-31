@@ -4,7 +4,7 @@
         /* 
             default controller , default method and parameters
         */
-        public $controller = "blog";
+        public $controller = "library";
         public $method     = "index";
         public $params     = []; 
 

@@ -3,8 +3,8 @@
     define("HOST","localhost");
     define("USER","root");
     define("PASSWORD","");
-    define("DATABASE","mvc");
-    define("BASEURL",'http://localhost/blog/');
+    define("DATABASE","elib");
+    define("BASEURL",'http://localhost/library/');
     
     date_default_timezone_set("Asia/kolkata");
     $cur_date_time = date('Y-m-d H:i:s');
